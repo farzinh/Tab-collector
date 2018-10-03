@@ -54,6 +54,9 @@ Now you can use it, if it's hard for you to rerun the **tab-collector.py** you c
 
 ### Possible Issues:
 If you have **Unicode ERROR** probably you can solve it like that:
+
 1 - Add `PassEnv LANG` to the end of `/etc/apache2/apache2.conf` or `htaccess`.
+
 2 - Uncomment `./etc/default/apache2/envvcars`
+
 3 - Make sure line similar to `LANG="en_US.UTF-8"` in present in `/etc/default/locale`.
