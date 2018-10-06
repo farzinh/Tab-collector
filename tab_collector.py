@@ -117,7 +117,7 @@ with a simple design
 """
 def tabdumper(html_path):
     # Remove footer
-    footer_remover()
+    footer_remover(html_path)
 
     # Finding mozilla recovery db
     path = pathlib.Path.home().joinpath('.mozilla/firefox')
