@@ -135,7 +135,7 @@ def tabdumper(html_path):
             b = f.read_bytes()
             if b[:8] == b'mozLz40\0':
                  b = lz4.block.decompress(b[8:])
-            j = json.loads(b)
+            j = json.loads(b.decode('utf-8'))
             for w in j['windows']:
                 for index,t in enumerate(w['tabs']):
                     i = t['index'] - 1
